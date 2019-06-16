@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".google"
+    tools:showIn="@layout/activity_main2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/google_login">
+
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:src="@mipmap/google_image"
+    android:padding="10dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Sign in with google"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:textColor="#F1F3FC"
+        android:padding="15dp"
+        android:gravity="center"
+        android:background="#4357A5"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+
+        <EditText
+            android:id="@+id/etUser_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Id"
+            android:background="@drawable/email_button"
+            android:padding="15dp"
+            android:textSize="25dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="50dp"
+            android:imeOptions="actionNext"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/password_button"
+            android:padding="15dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/login_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        android:textColor="#041429"
+        />
+
+   </LinearLayout>

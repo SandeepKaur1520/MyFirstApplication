@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Login"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main"
+    android:background="@mipmap/sandeep"
+    android:padding="16dp">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue to gmail"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#010507"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/profile"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="E-mail"
+        android:background="@drawable/email_button"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:background="@drawable/password_button"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"/>
+
+    <CheckBox
+        android:id="@+id/cbsave_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save info"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="#01080E"/>
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:background="@drawable/login_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textColor="#041429"
+        />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/Create_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_background"
+        android:text="Create new account"
+        android:textColor="#051224"
+        android:textSize="25dp"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/bLogin_with_Google_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_background1"
+        android:padding="16dp"
+        android:text="Login with Google account"
+        android:textAllCaps="false"
+        android:textColor="#05101D"
+        android:textSize="25dp" />
+
+
+        />
+
+</LinearLayout
+    >
